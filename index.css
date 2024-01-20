@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "arial";
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  padding: 15px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  height: 80vh;
+  margin-top: 2rem;
+}
+
+.profileImage {
+  display: flex;
+  height: 100%;
+  margin: auto 0;
+}
+
+.profileImage img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.mainInfo {
+  display: inline-block;
+  margin-top: 3rem;
+}
+
+.right h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.InsideTheCage {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.InsideTheCage h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.InsideTheCage p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.contact-button {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #555;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  margin-right: 20px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .right {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .profileImage {
+    margin: auto;
+  }
+
+  .social-media {
+    margin-top: 1rem;
+  }
+}
